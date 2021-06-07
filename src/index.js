@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
+import GlobalContext from './context/GlobalContext'
 
 ReactDOM.render(
-    <React.StrictMode>
+    <GlobalContext>
         <App />
-    </React.StrictMode>,
+    </GlobalContext>,
     document.getElementById('root')
 );
 
