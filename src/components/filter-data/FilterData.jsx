@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FilterData() {
+const FilterData = () => {
     return (
         <div>
             <h4>filters</h4>
@@ -8,4 +8,4 @@ function FilterData() {
     );
 }
 
-export default FilterData;
+export default FilterData

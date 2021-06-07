@@ -1,0 +1,6 @@
+export const TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlMjBhZDliNzc4MTAwMjA5YzVhYzEiLCJpYXQiOjE2MjMwNzI5NDF9.U95eJ__IR8iZ-RA94AidyV1UPMERNaIfKSjLZLWVewg'
+export const PRODUCTS_API = 'https://coding-challenge-api.aerolab.co/products'
+export const REDEEM_API = 'https://coding-challenge-api.aerolab.co/redeem'
+export const USER_API = 'https://coding-challenge-api.aerolab.co/user/me'
+export const USER_HISTORY_API = 'https://coding-challenge-api.aerolab.co/user/history'
+export const USER_POINTS_API = 'https://coding-challenge-api.aerolab.co/user/points'
