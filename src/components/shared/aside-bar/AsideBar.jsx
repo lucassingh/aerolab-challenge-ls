@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AsideBar() {
+const AsideBar = () => {
     return (
         <div>
             <h3>aside-nav</h3>
