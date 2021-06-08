@@ -1,11 +1,14 @@
 import React from 'react';
 
-function Loader() {
+const Loader = () => {
     return (
-        <div>
-            <h4>loader</h4>
-        </div>
-    );
+		<div className="lds-ring">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	)
 }
 
 export default Loader;

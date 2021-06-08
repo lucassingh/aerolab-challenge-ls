@@ -1,0 +1,42 @@
+/* ---------- FILTERS ---------- */
+
+.filters {
+	margin: 0 20px;
+	padding: 5px;
+	padding-top: 10px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.filters span {
+	border-left: 1px solid #d9d9d9;
+	padding: 15px 15px;
+	margin-left: 10px;
+}
+
+.filters button {
+	width: 120px;
+	height: 40px;
+	margin-top: 5px;
+	margin-left: 15px;
+	padding: 10px;
+	font-size: 14px;
+	box-sizing: border-box;
+	border-radius: 21px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background: #ededed;
+	color: #a3a3a3;
+}
+
+.filters button.active {
+	color: #ffffff;
+	background-color: #0ad4fa;
+}
+
+.filters p {
+	padding: 15px 10px;
+}

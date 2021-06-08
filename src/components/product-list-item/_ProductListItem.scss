@@ -1,0 +1,129 @@
+/* ---------- PRODUCTLISTITEM ---------- */
+
+.productListItem {
+	width: 240px;
+	height: 240px;
+	margin: 15px;
+	text-align: left;
+	background: #ffffff;
+	box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.productListItem .cover {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 240px;
+	height: 240px;
+	box-sizing: border-box;
+	z-index: 6666;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(-180deg, #0ad4fa 0%, #25bbf1 100%);
+	opacity: 0.8;
+	box-shadow: 3px 2px 15px 6px rgba(140, 140, 140, 0.5);
+	visibility: hidden;
+}
+
+.productListItem .cover img {
+	width: 40px;
+	height: 40px;
+	vertical-align: text-bottom;
+}
+
+.productListItem .cover span {
+	font-size: 50px;
+	color: white;
+}
+.productListItem .cover button {
+	width: 180px;
+	height: 42px;
+	margin-top: 5px;
+	padding: 5px;
+	font-size: 16px;
+	box-sizing: border-box;
+	border-radius: 21px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.productListItem:hover .cover {
+	visibility: visible;
+}
+
+.productListItem .back {
+	position: relative;
+	top: -240px;
+	left: 0px;
+
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.productListItem .badge {
+	position: relative;
+	z-index: 5555;
+	box-sizing: border-box;
+	background-color: #0ad4fa;
+	opacity: 0.8;
+	box-shadow: 1px 1px 6px 2px #c6dfe4;
+}
+
+.productListItem .badge.round {
+	top: -460px;
+	left: 186px;
+	width: 40px;
+	height: 40px;
+	padding: 0px;
+	border-radius: 20px;
+}
+
+.productListItem .badge.rectangle {
+	top: -470px;
+	left: 116px;
+	height: 30px;
+	width: 114px;
+	padding: 8px 10px;
+	border-radius: 20px;
+	background: #616161;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.productListItem .badge.rectangle span {
+	display: inline;
+	font-size: 12px;
+}
+
+.productListItem .badge.rectangle img {
+	display: inline;
+	margin-top: -1px;
+	height: 18px;
+	width: 18px;
+	margin-left: 2px;
+}
+
+.productListItem img {
+	width: 100%;
+}
+
+.productListItem hr {
+	border-top: 1px solid #d9d9d9;
+}
+
+.productListItem p {
+	margin-top: 10px;
+	font-size: 16px;
+	color: #a3a3a3;
+	letter-spacing: -0.04px;
+}
+
+.productListItem h4 {
+	font-size: 18px;
+	color: #616161;
+	letter-spacing: -0.04px;
+}
