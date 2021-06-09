@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import './App.scss';
 import Pagination from './components/pagination/Pagination';
 import FilterData from './components/filter-data/FilterData';
-import AsideBar from './components/shared/aside-bar/AsideBar';
+import WidgetAsideBar from './components/shared/nav-bar/NavBar';
 import Loader from './components/shared/loader/Loader';
 import ProductList from './components/product-list/ProductList';
 import { GlobalContext } from './context/GlobalContext';
@@ -57,7 +57,7 @@ function App() {
 					<Loader />
 				) : (
 					<>
-						<AsideBar />
+						<WidgetAsideBar />
 						<div className="main">
 							<FilterData/>
 							<ProductList products={filteredProducts ? filteredProducts : products} productsByPage={PROD_PER_PAGE} page={page}/>

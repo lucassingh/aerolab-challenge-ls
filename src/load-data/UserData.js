@@ -40,16 +40,16 @@ export const getUserHistoryData = async () => {
     }
 }
 
-export const addPoints = async (points) => {
-	const STEPS = 1000
+export const addPointsUser = async (points) => {
+	const RANGE = 1000
 	let error = null
 	let response = ''
 
 	const body = {
-		amount: STEPS
+		amount: RANGE
 	}
 
-	for (let i = points / STEPS; i > 0; i--) {
+	for (let i = points / RANGE; i > 0; i--) {
 		if (error) return
 
 		try {

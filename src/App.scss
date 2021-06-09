@@ -1,10 +1,13 @@
-@import './components/shared/aside-bar/AsideBar';
+@import './components/shared/nav-bar/NavBar';
 @import './components/filter-data/FilterData';
-@import './components/pagination/Pagination';
+
 @import './components/product-list/ProductList';
 @import './components/product-list-item/ProductListItem';
 @import './components/shared/loader/Loader';
 @import './components/shared/modal/Modal';
 @import './components/product-change/ProductChange';
+@import './components/item-history/ItemHistory';
+@import './components/get-coins/GetCoins';
+@import './components/pagination/Pagination';
 
 

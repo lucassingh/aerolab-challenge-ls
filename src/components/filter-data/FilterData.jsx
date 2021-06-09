@@ -52,12 +52,14 @@ const FilterData = () => {
 				onClick={filter}
 				className={activeFilter === 'lowerPrice' ? 'active' : ''}
 				name='lowerPrice'
-				>Lowest price</button>
+				>Lowest price
+            </button>
 			<button
 				onClick={filter}
 				className={activeFilter === 'highestPrice' ? 'active' : ''}
 				name='highestPrice'
-				>Highest price</button>
+				>Highest price
+            </button>
 		</div>
     );
 }
