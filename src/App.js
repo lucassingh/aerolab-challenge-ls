@@ -44,11 +44,11 @@ function App() {
     
     return (
 		<div className={showModal ? "modal-open container" : "container"}>
-			<div className="upbar">
-				<img src={logo} alt="logo" />
+			<nav className="nav-brand">
+				<img src={logo} alt="brand-logo"/>
 				<span>{`Hello, ${user.name}!`}</span>
-			</div>
-			<div className="header">
+			</nav>
+			<div className="header-brand">
 				<img src={banner} alt="banner" />
 				<h1>{section}</h1>
 			</div>
@@ -59,14 +59,12 @@ function App() {
 					<>
 						<WidgetAsideBar />
 						<div className="main">
-							<FilterData/>
 							<ProductList products={filteredProducts ? filteredProducts : products} productsByPage={PROD_PER_PAGE} page={page}/>
 							<Pagination />
 						</div>
 					</>
 				)}
 			</div>
-			
 		</div>
 	)
 }

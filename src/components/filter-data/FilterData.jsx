@@ -1,6 +1,7 @@
 import React, {useState, useContext} from 'react';
 import Pagination from '../pagination/Pagination';
 import { GlobalContext } from '../../context/GlobalContext';
+import './FilterData.scss'
 
 const FilterData = () => {
 
@@ -46,7 +47,6 @@ const FilterData = () => {
 
     return (
         <div className="filters">
-			<Pagination />
 			<span>Sort by:</span>
 			<button
 				onClick={filter}

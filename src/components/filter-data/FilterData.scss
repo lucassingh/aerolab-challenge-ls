@@ -1,0 +1,54 @@
+
+.filters {	
+	display: flex;
+    align-items: center;
+	justify-content: center;
+
+    span {
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+
+.filters button {
+	width: 80px;
+	padding: 10px;
+	font-size: 10px;
+	box-sizing: border-box;
+    margin-right: 5px;
+	border-radius: 21px;
+	outline: none;
+	border: none;
+	background: rgb(196, 84, 123);;
+	color: #fff;
+}
+
+.filters button:hover {
+    background-color: #0ad4fa;
+    cursor: pointer;
+}
+
+.filters button.active {
+	color: #ffffff;
+	background-color: #0ad4fa;
+}
+
+.filters p {
+	padding: 15px 10px;
+}
+
+@media only screen and (min-width: 1200px) { 
+    .filters button {
+        width: 120px;
+        padding: 14px;
+        font-size: 14px;
+        box-sizing: border-box;
+        margin-right: 5px;
+        border-radius: 21px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background: rgb(196, 84, 123);;
+        color: #fff;
+    }
+}
