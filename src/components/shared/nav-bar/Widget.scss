@@ -1,0 +1,57 @@
+.widget {
+    width: 100%;
+    
+    .cont-credit-user {
+        background:#f7f5f5;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .credit-user {
+            font-size: 18px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .credit-img{        
+            width: 40%;
+        }
+
+        .credit-text {
+            border-radius: 21px;
+        }
+        .credit-button{
+            padding: 10px;
+            font-size: 12px;
+            box-sizing: border-box;
+            border-radius: 21px;
+            outline: none;
+            border: none;
+            margin-right: 10px;
+            color: #ffffff;
+            background-color: #0ad4fa;
+        }
+
+        .credit-button:hover {
+            padding: 10px;
+            cursor: pointer;
+            background-color: rgb(196, 84, 123);
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) { 
+    .widget {
+        .cont-credit-user {
+            padding: 1%;
+
+            .credit-button {
+                margin-right: 20px;
+            }
+        }        
+    }    
+}
+

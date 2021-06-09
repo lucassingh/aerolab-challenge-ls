@@ -1,10 +1,14 @@
 import React, { useContext } from 'react';
+import './NavBar.scss';
+import './Widget.scss';
 import { GlobalContext } from '../../../context/GlobalContext';
 import User from '../../shared/user/User';
 import Modal from '../../shared/modal/Modal';
 import ItemHistory from '../../item-history/ItemHistory';
 import GetCoin from '../../get-coins/GetCoins';
 import coin  from '../../../assets/images/coin.svg';
+import Pagination from '../../pagination/Pagination';
+import FilterData from '../../filter-data/FilterData';
 
 const WidgetAsideBar = () => {
     const {
@@ -20,29 +24,26 @@ const WidgetAsideBar = () => {
 	}
 
     return (
-        <div className="sidebar">
-			<User
-				name={user.name}
-				width={90}
-				border={'#18DBFF'}
-				backgroud={'white'}
-				// imageURL={'https://semantic-ui.com/images/avatar/small/steve.jpg'}
-			/>
-			<span className="name">{user.name}</span>
+        <div className="widget">
+			
 			{user.points && (
-				<>
-					<div className="points">
-						<img src={coin} alt="" />
-						<p>{user.points}</p>
-					</div>
-					<button onClick={handleClick}>Buy More</button>
+				<>  
+                    <div className="cont-credit-user">
+                        <div className="credit-user">
+                            <img className="credit-img" src={coin} alt="" />
+                            <p className="credit-text">{user.points}</p>
+                        </div>
+                        <button className="credit-button" onClick={handleClick}>Buy More</button>
+                        <FilterData />
+                    </div>
+					
 				</>
 			)}
-			{history && (
+			{/* {history && (
 				<>
 					<ItemHistory history={history} />
 				</>
-			)}
+			)} */}
 
 			{showBuyModal && (
 				<Modal
@@ -50,7 +51,7 @@ const WidgetAsideBar = () => {
 					setShow={setShowBuyModal}
 					loading={waitingRequest}
 				>
-					<GetCoin />
+				<GetCoin />
 				</Modal>
 			)}
 
