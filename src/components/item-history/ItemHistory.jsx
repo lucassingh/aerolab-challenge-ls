@@ -4,29 +4,31 @@ import coin from '../../assets/images/coin.svg';
 
 const ItemHistory = ({ history }) => {
     return (
-		<div className="history">
-			<h3>Last swaps</h3>
-			{history.map((item, key) => (
-				<div className="historyItem" key={key}>
-					<img
-						className="historyProductImg"
-						src={item.img.url}
-						alt={item.name}
-					/>
-					<div>
-						<p>{item.name}</p>
-						<p>
-							{item.cost}{' '}
-							<img
-								className="historyCoin"
-								src={coin}
-								alt="coin"
-							/>{' '}
-						</p>
-					</div>
-				</div>
-			))}
-		</div>
+        <>
+            <h3>Your products</h3>
+            <div className="container-view">
+                {history.map((item, key) => (
+                    <div className="viewItem" key={key}>
+                        <img
+                            className="viewImg"
+                            src={item.img.url}
+                            alt={item.name}
+                        />
+                        <div>
+                            <p>{item.name}</p>
+                            <p>
+                                {item.cost}{' '}
+                                <img
+                                    className="viewCredit"
+                                    src={coin}
+                                    alt="coin"
+                                />{' '}
+                            </p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </>
     )
 }
 
