@@ -6,8 +6,13 @@
 	margin-top: auto;
 	margin-bottom: auto;
 
+    .cont-user {
+        display: flex;
+    }
+
     img {
         width: 40px;
+        margin-right: 5px;
     }
 
     span {
