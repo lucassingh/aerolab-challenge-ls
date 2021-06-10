@@ -10,6 +10,7 @@ import { getAllProducts } from './load-data/ProductData';
 import { getUserData, getUserHistoryData } from './load-data/UserData';
 import { PROD_PER_PAGE } from './load-data/ProjectsConst';
 import logo from './assets/icons/aerolab-logo.svg';
+import avatar from './assets/images/user.png';
 import banner from './assets/images/header-x1.png';
 
 function App() {
@@ -46,7 +47,10 @@ function App() {
 		<div className={showModal ? "modal-open container" : "container"}>
 			<nav className="nav-brand">
 				<img src={logo} alt="brand-logo"/>
-				<span>{`Hello, ${user.name}!`}</span>
+                <div className="cont-user">
+                    <img src={avatar} alt="user"/>
+                    <span>{`Hello, ${user.name}!`}</span>
+                </div>
 			</nav>
 			<div className="header-brand">
 				<img src={banner} alt="banner" />
