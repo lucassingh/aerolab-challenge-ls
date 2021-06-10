@@ -1,4 +1,6 @@
 import React from 'react';
+import close from '../../../assets/icons/cross.svg';
+import './Modal.scss';
 
 const Modal = ({ show, setShow, children, type, loading }) => {
 
@@ -14,10 +16,9 @@ const Modal = ({ show, setShow, children, type, loading }) => {
 			<div className={background}>
 				<div className="centered">
 					<div className={className}>
-						<div className="modalClose" onClick={handleClick}>
-							<button className={loading ? 'disabled' : ''}> </button>
+						<div onClick={handleClick} className="containerlClose">
+                            <img src={close} className="img-modal" />
 						</div>
-
 						{children}
 					</div>
 				</div>

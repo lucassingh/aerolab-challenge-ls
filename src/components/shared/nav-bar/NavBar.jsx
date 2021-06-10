@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import './NavBar.scss';
 import './Widget.scss';
 import { GlobalContext } from '../../../context/GlobalContext';
-import User from '../../shared/user/User';
 import Modal from '../../shared/modal/Modal';
 import ItemHistory from '../../item-history/ItemHistory';
 import GetCoin from '../../get-coins/GetCoins';

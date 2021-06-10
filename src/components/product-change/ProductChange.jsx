@@ -4,6 +4,7 @@ import { GlobalContext } from '../../context/GlobalContext';
 import { getRedeemProduct } from '../../load-data/ProductData';
 import { getUserData, getUserHistoryData } from '../../load-data/UserData';
 import cheems from'../../assets/images/cheems.jpeg';
+import './ProductChange.scss';
 import gif from '../../assets/images/ckeck.gif';
 import coin from '../../assets/images/coin.svg'
 

@@ -5,6 +5,7 @@ import { addPointsUser } from '../../load-data/UserData';
 import { RANGE, ADD_COINS, REMOVE_COINS } from '../../load-data/ProjectsConst';
 import coin  from '../../assets/images/coin.svg';
 import cheems from '../../assets/images/cheems.jpeg';
+import './GetCoins.scss';
 import gif from '../../assets/images/ckeck.gif';
 
 const GetCoins = () =>  {

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../../context/GlobalContext';
 import coin from '../../assets/icons/coin.svg';
 import cart2 from '../../assets/images/cart2.svg'
+import './ProductListItem.scss';
 
 function ProductListItem({product}) {
 
@@ -15,8 +16,8 @@ function ProductListItem({product}) {
 	}
 
     return (
-		<div key={product.id} className="productListItem">
-			<div className="cover">
+		<div key={product.id} className="list-grid">
+			<div className="overlay">
 				<div>
 					<span>{product.cost}</span>
 					<img src={coin} alt="" />
@@ -35,12 +36,12 @@ function ProductListItem({product}) {
 			<div>
 				{hasRequiredCoins ? (
 					<img
-						className="badge round"
+						className="bag-buy round"
 						src={cart2}
 						alt="cart"
 					/>
 				) : (
-					<div className="badge rectangle">
+					<div className="badge container">
 						<span>{`Coins left: ${coinsLeft}`}</span>
 						<img src={coin} alt="coin" />
 					</div>

@@ -30,69 +30,13 @@
 	padding: 40px;
 }
 
-.modalClose {
+.containerlClose {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: -15px;
-	margin-right: -15px;
-	margin-bottom: 25px;
-}
-.modalClose button {
-	background: #ff605c;
-	box-shadow: 2px 2px 8px -3px rgba(0, 0, 0, 0.8);
-	outline: none;
-	border: none;
-	cursor: pointer;
-	width: 20px;
-	height: 20px;
-	border-radius: 10px;
 }
 
-/* ---------- CONFIRM SWAP ---------- */
-
-.confirmSwap {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.confirmSwap h4 {
-	font-size: 18px;
-}
-
-.confirmSwap span {
-	margin-top: 2px;
-	margin-bottom: 8px;
-	font-size: 16px;
-}
-
-.confirmSwap span img {
-	width: 14px;
-}
-
-.confirmSwap .messageImg {
-	margin-bottom: 50px;
-	width: 80%;
-}
-
-.confirmSwap .message {
-	font-size: 24px;
-	text-align: center;
-}
-
-.confirmSwap button {
-	margin-top: 20px;
-	margin-left: 0;
-	padding: 6px;
-	font-size: 14px;
-	box-sizing: border-box;
-	border-radius: 21px;
-	outline: none;
-	border: none;
-	cursor: pointer;
-	color: #ffffff;
+.img-modal {
+    width: 20px;
 }
 
 /* ---------- COIN SELECTOR ---------- */
