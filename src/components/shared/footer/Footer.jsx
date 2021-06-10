@@ -1,10 +1,15 @@
 import React from 'react';
 
-function Footer() {
+const Footer = () => {
     return (
-        <div>
-            <h2>footer</h2>
-        </div>
+        <>
+            <div className="container-footer">
+                <span>Aerolab challenge - Lucas Singh</span>
+            </div>
+            <div>
+                <span className="sub-footer">Realizado el 10/6/2021</span> 
+            </div>
+        </>
     );
 }
 

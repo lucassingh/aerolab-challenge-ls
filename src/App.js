@@ -12,6 +12,7 @@ import { PROD_PER_PAGE } from './load-data/ProjectsConst';
 import logo from './assets/icons/aerolab-logo.svg';
 import avatar from './assets/images/user.png';
 import banner from './assets/images/header-x1.png';
+import Footer from './components/shared/footer/Footer';
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
 					</>
 				)}
 			</div>
+            <Footer/>
 		</div>
 	)
 }
