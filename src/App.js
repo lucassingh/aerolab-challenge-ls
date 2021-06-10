@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import './App.scss';
 import Pagination from './components/pagination/Pagination';
-import FilterData from './components/filter-data/FilterData';
 import WidgetAsideBar from './components/shared/nav-bar/NavBar';
 import Loader from './components/shared/loader/Loader';
 import ProductList from './components/product-list/ProductList';
@@ -63,7 +62,7 @@ function App() {
 				) : (
 					<>
 						<WidgetAsideBar />
-						<div className="main">
+						<div className="main-container">
 							<ProductList products={filteredProducts ? filteredProducts : products} productsByPage={PROD_PER_PAGE} page={page}/>
 							<Pagination />
 						</div>

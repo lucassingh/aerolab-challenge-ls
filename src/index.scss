@@ -14,33 +14,9 @@ span {
 	font-weight: 400;
 }
 
-h1 {
-	font-size: 48px;
-}
-
 body {
 	font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
-}
-
-.flex-column {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-}
-
-.main {
-	display: grid;
-    grid-template-columns: repeat(1,minmax(0,1fr)) !important;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
 }
 
 .centered {
@@ -50,59 +26,51 @@ body {
 	height: 100vh;
 }
 
-.success {
-	background: rgb(143, 244, 208);
-	background: linear-gradient(
-		163deg,
-		rgba(143, 244, 208, 1) 33%,
-		rgba(103, 242, 102, 1) 60%,
-		rgba(143, 254, 209, 1) 100%
-	);
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+}
+
+.main-container {
+	display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr)) !important;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.confirm {
+    background: #0ad4fa;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.confirm:hover {
+    background: #c4547b;
+    cursor: pointer;
 }
 
 .cancel {
-	background: rgb(242, 49, 118);
-	background: linear-gradient(
-		163deg,
-		rgba(242, 49, 118, 1) 33%,
-		rgba(180, 21, 92, 1) 54%,
-		rgba(249, 0, 9, 1) 100%
-	);
+    background: #c4c4c4;
+    width: 120px;
+    color: #fff;
 }
 
-button.success {
-	width: 180px;
-	height: 40px;
-	font-size: 16px;
-	color: cadetblue;
+.cancel:hover {
+    background: #434546;
 }
 
-button.close {
-	width: 180px;
-	height: 40px;
-	font-size: 16px;
-	color: cadetblue;
+.success {
+	background: #0ad4fa;
 }
 
-button.cancel {
-	background: none;
-	color: rgb(242, 49, 118);
-	text-decoration: underline;
-}
-
-button.disabled {
-	background: #d9d9d9;
-}
-button.left {
-	border-radius: 21px 0 0 21px;
-}
-
-button.right {
-	border-radius: 0 21px 21px 0;
+.succes:hover {
+    cursor:pointer;
+    background: #c4547b;
 }
 
 @media only screen and (min-width: 1200px) { 
-    .main {
+    .main-container {
         padding: 4% 8% 0 8%;
     }   
 }

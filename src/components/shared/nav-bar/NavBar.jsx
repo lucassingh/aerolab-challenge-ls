@@ -6,7 +6,6 @@ import Modal from '../../shared/modal/Modal';
 import ItemHistory from '../../item-history/ItemHistory';
 import GetCoin from '../../get-coins/GetCoins';
 import coin  from '../../../assets/images/coin.svg';
-import Pagination from '../../pagination/Pagination';
 import FilterData from '../../filter-data/FilterData';
 
 const WidgetAsideBar = () => {

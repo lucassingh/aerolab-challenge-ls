@@ -1,4 +1,4 @@
-.confirmSwap {
+.exchange {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -6,39 +6,26 @@
 	justify-content: space-around;
 }
 
-.confirmSwap h4 {
+.exchange h4 {
 	font-size: 18px;
 }
 
-.confirmSwap span {
+.exchange span {
 	margin-top: 2px;
 	margin-bottom: 8px;
 	font-size: 16px;
 }
 
-.confirmSwap span img {
+.exchange span img {
 	width: 14px;
 }
 
-.confirmSwap .messageImg {
+.exchange .messageImg {
 	margin-bottom: 50px;
 	width: 80%;
 }
 
-.confirmSwap .message {
+.exchange .message {
 	font-size: 24px;
 	text-align: center;
-}
-
-.confirmSwap button {
-	margin-top: 20px;
-	margin-left: 0;
-	padding: 6px;
-	font-size: 14px;
-	box-sizing: border-box;
-	border-radius: 21px;
-	outline: none;
-	border: none;
-	cursor: pointer;
-	color: #ffffff;
 }

@@ -4,9 +4,9 @@ import { GlobalContext } from '../../context/GlobalContext';
 import { addPointsUser } from '../../load-data/UserData';
 import { RANGE, ADD_COINS, REMOVE_COINS } from '../../load-data/ProjectsConst';
 import coin  from '../../assets/images/coin.svg';
-import cheems from '../../assets/images/cheems.jpeg';
+import cancel from '../../assets/images/cancel.gif';
 import './GetCoins.scss';
-import gif from '../../assets/images/ckeck.gif';
+import success from '../../assets/images/success.gif';
 
 const GetCoins = () =>  {
     const { setShowBuyModal, user, setUser, setWaitingRequest } = useContext(GlobalContext);
@@ -50,26 +50,26 @@ const GetCoins = () =>  {
 	}
 
     return (
-		<div className="confirmSwap">
+		<div className="exchange">
 			{message ? (
 				<>
 					<h3 className="message">{message}</h3>
 					{badRequest ? (
 						<img
-							src={cheems}
-							alt="happy dog"
-							className="messageImg"
+							src={success}
+							alt="success"
+							className="msgUser"
 						/>
 					) : (
 						<img
-							src={gif}
-							alt="cheems dog"
-							className="messageImg"
+							src={cancel}
+							alt="cancel"
+							className="msgUser"
 						/>
 					)}
 
 					<button className="close" onClick={handleCancel}>
-						Cerrar
+						Close
 					</button>
 				</>
 			) : (
@@ -93,14 +93,14 @@ const GetCoins = () =>  {
 						<Loader />
 					) : (
 						<>
-							<div className="coinsSelector">
+							<div className="selectPrice">
 								<button
 									className={coinsToBuy > REMOVE_COINS ? 'left' : 'left disabled'}
 									onClick={deleteCoins}
 								>
 									-
 								</button>
-								<div className="number">
+								<div className="coins-range">
 									<span>{coinsToBuy}</span>
 
 									<img
@@ -118,12 +118,14 @@ const GetCoins = () =>  {
 									+
 								</button>
 							</div>
-							<button className="success" onClick={handleConfirm}>
-								Confirm
-							</button>
-							<button className="cancel" onClick={handleCancel}>
-								Cancel
-							</button>
+                            <div>
+                                <button className="confirm" onClick={handleConfirm}>
+                                    Confirm
+                                </button>
+                                <button className="cancel" onClick={handleCancel}>
+                                    Cancel
+                                </button>
+                            </div>							
 						</>
 					)}
 				</>

@@ -17,7 +17,7 @@ const Modal = ({ show, setShow, children, type, loading }) => {
 				<div className="centered">
 					<div className={className}>
 						<div onClick={handleClick} className="containerlClose">
-                            <img src={close} className="img-modal" />
+                            <img src={close} alt="img-modal" className="img-modal" />
 						</div>
 						{children}
 					</div>

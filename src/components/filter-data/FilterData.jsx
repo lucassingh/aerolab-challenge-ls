@@ -1,5 +1,4 @@
 import React, {useState, useContext} from 'react';
-import Pagination from '../pagination/Pagination';
 import { GlobalContext } from '../../context/GlobalContext';
 import './FilterData.scss'
 
