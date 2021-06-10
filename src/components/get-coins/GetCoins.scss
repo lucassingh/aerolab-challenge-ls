@@ -1,6 +1,4 @@
-/* ---------- CONFIRM SWAP ---------- */
-
-.confirmSwap {
+.exchange {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -8,31 +6,31 @@
 	justify-content: space-around;
 }
 
-.confirmSwap h4 {
+.exchange h4 {
 	font-size: 18px;
 }
 
-.confirmSwap span {
+.exchange span {
 	margin-top: 2px;
 	margin-bottom: 8px;
 	font-size: 16px;
 }
 
-.confirmSwap span img {
+.exchange span img {
 	width: 14px;
 }
 
-.confirmSwap .messageImg {
+.exchange .msgUser {
 	margin-bottom: 50px;
 	width: 80%;
 }
 
-.confirmSwap .message {
+.exchange .msgUser {
 	font-size: 24px;
 	text-align: center;
 }
 
-.confirmSwap button {
+.exchange button {
 	margin-top: 20px;
 	margin-left: 0;
 	padding: 6px;
@@ -45,40 +43,43 @@
 	color: #ffffff;
 }
 
-/* ---------- COIN SELECTOR ---------- */
-
 .coin_big {
 	width: 120px;
 	margin-top: 30px;
 }
 
-.coinsSelector {
+.coins-range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectPrice {
 	display: flex;
-	margin-top: 20px;
-	margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.coinsSelector button {
-	margin-top: 0;
-	margin-left: 0;
-	height: 60px;
-	font-size: 40px;
+
+.left {
+    width: 50px;
+    height: 50px;
+    background: #0ad4fa;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 20px;
 }
 
-.coinsSelector .number {
-	width: 120px;
-	height: 60px;
-	box-sizing: border-box;
-	border: 2px solid #0ad4fa;
-	text-align: center;
-	padding-top: 14px;
+.right {
+    width: 50px;
+    height: 50px;
+    background: #0ad4fa;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
 }
 
-.coinsSelector .number span {
-	font-size: 24px;
-	margin-right: 5px;
+.disabled {
+    background: #c4c4c4;
 }
 
-.coinsSelector img {
-	width: 18px;
-}

@@ -1,13 +1,11 @@
 import React from 'react';
-import './Loader.scss'
+import loader from '../../../assets/images/loader.gif'
+import './Loader.scss';
 
 const Loader = () => {
     return (
-		<div className="lds-ring">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
+		<div className="container-loader">
+            <img src={loader} alt="" />
 		</div>
 	)
 }

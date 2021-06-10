@@ -3,9 +3,9 @@ import Loader from '../shared/loader/Loader';
 import { GlobalContext } from '../../context/GlobalContext';
 import { getRedeemProduct } from '../../load-data/ProductData';
 import { getUserData, getUserHistoryData } from '../../load-data/UserData';
-import cheems from'../../assets/images/cheems.jpeg';
+import cancel from'../../assets/images/cancel.gif';
+import success from '../../assets/images/success.gif';
 import './ProductChange.scss';
-import gif from '../../assets/images/ckeck.gif';
 import coin from '../../assets/images/coin.svg'
 
 const ProductChange = () => {
@@ -54,31 +54,31 @@ const ProductChange = () => {
 
 
     return (
-		<div className="confirmSwap">
+		<div className="exchange">
 			{message ? (
 				<>
 					<h3 className="message">{message}</h3>
 					{badRequest ? (
 						<img
-							src={cheems}
-							alt="happy dog"
+							src={success}
+							alt="success"
 							className="messageImg"
 						/>
 					) : (
 						<img
-							src={gif}
-							alt="cheems dog"
+							src={cancel}
+							alt="cancel"
 							className="messageImg"
 						/>
 					)}
 
 					<button className="close" onClick={handleCancel}>
-						Cerrar
+						Close
 					</button>
 				</>
 			) : (
 				<>
-					<h3>Redemption confirmation</h3>
+					<h3>Confirm Exchange</h3>
 					<img src={selectedProduct.img.url} alt="" />
 					<h4>{selectedProduct.name}</h4>
 					<span>
@@ -92,8 +92,8 @@ const ProductChange = () => {
 					{loading ? (
 						<Loader />
 					) : (
-						<div className={'flex-column'}>
-							<button className="success" onClick={handleConfirm}>
+						<div>
+							<button className="confirm" onClick={handleConfirm}>
 								Confirm
 							</button>
 							<button className="cancel" onClick={handleCancel}>
