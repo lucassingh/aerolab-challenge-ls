@@ -1,4 +1,5 @@
 import React from 'react';
+import './ItemHistory.scss';
 import coin from '../../assets/images/coin.svg';
 
 const ItemHistory = ({ history }) => {

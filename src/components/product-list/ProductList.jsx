@@ -3,6 +3,7 @@ import { GlobalContext } from '../../context/GlobalContext';
 import ProductListItem from '../product-list-item/ProductListItem';
 import Modal from '../../components/shared/modal/Modal';
 import ProductChange from '../product-change/ProductChange';
+import './ProductList.scss';
 
 const ProductList = ({ products, page, productsByPage }) => {
 

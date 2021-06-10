@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import { PROD_PER_PAGE } from '../../load-data/ProjectsConst'
 import { GlobalContext } from '../../context/GlobalContext'
+import './Pagination.scss';
 import arrowLeft from '../../assets/icons/left-arrow.svg';
 import arrowRight from '../../assets/icons/right-arrow.svg' 
 

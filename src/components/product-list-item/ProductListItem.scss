@@ -1,5 +1,5 @@
 
-.productListItem {
+.list-grid {
 	width: 177px;
 	height: 240px;
 	margin: 15px;
@@ -9,7 +9,7 @@
     border-radius: 15px;
 }
 
-.productListItem .cover {
+.list-grid .overlay {
 	position: relative;
 	top: 0px;
 	left: 0px;
@@ -28,17 +28,17 @@
 	visibility: hidden;
 }
 
-.productListItem .cover img {
+.list-grid .overlay img {
 	width: 40px;
 	height: 40px;
 	vertical-align: text-bottom;
 }
 
-.productListItem .cover span {
+.list-grid .overlay span {
 	font-size: 50px;
 	color: white;
 }
-.productListItem .cover button {
+.list-grid .overlay button {
 	width: 160px;
 	height: 42px;
 	margin-top: 5px;
@@ -51,11 +51,11 @@
 	cursor: pointer;
 }
 
-.productListItem:hover .cover {
+.list-grid:hover .overlay {
 	visibility: visible;
 }
 
-.productListItem .back {
+.list-grid .back {
 	position: relative;
 	top: -240px;
 	left: 0px;
@@ -64,7 +64,7 @@
 	box-sizing: border-box;
 }
 
-.productListItem .badge {
+.list-grid .bag-buy {
 	position: relative;
 	z-index: 5555;
 	box-sizing: border-box;
@@ -73,7 +73,7 @@
 	box-shadow: 1px 1px 6px 2px #c6dfe4;
 }
 
-.productListItem .badge.round {
+.list-grid .bag-buy.round {
     
     top: -463px;
     left: 136px;
@@ -83,7 +83,7 @@
 	border-radius: 20px;
 }
 
-.productListItem .badge.rectangle {
+.list-grid .bag-buy.container {
 	top: -470px;
 	left: 116px;
 	height: 30px;
@@ -96,12 +96,12 @@
 	justify-content: center;
 }
 
-.productListItem .badge.rectangle span {
+.list-grid .bag-buy.container span {
 	display: inline;
 	font-size: 12px;
 }
 
-.productListItem .badge.rectangle img {
+.list-grid .bag-buy.container img {
 	display: inline;
 	margin-top: -1px;
 	height: 18px;
@@ -109,65 +109,65 @@
 	margin-left: 2px;
 }
 
-.productListItem img {
+.list-grid img {
 	width: 100%;
 }
 
-.productListItem hr {
+.list-grid hr {
 	border-top: 1px solid #d9d9d9;
 }
 
-.productListItem p {
+.list-grid p {
 	margin-top: 48px;
 	font-size: 12px;
 	color: #a3a3a3;
 	letter-spacing: -0.04px;
 }
 
-.productListItem h4 {
+.list-grid h4 {
 	font-size: 14px;
 	color: #616161;
 	letter-spacing: -0.04px;
 }
 
 @media only screen and (min-width: 1200px) {
-    .productListItem {
+    .list-grid {
         width: 238px;
         height: 240px;
     }
 
-    .productListItem p {
+    .list-grid p {
         margin-top: 10px;
         font-size: 16px;
         color: #a3a3a3;
         letter-spacing: -0.04px;
     }
     
-    .productListItem h4 {
+    .list-grid h4 {
         font-size: 18px;
     }
     
-    .productListItem .cover {
+    .list-grid .overlay {
         width: 240px;
         height: 240px;
     }
 
-    .productListItem p {
+    .list-grid p {
         margin-top: 23px;
     }
 
-    .productListItem .badge.round {
+    .list-grid .bag-buy.round {
         top: -490px;
         left: 186px;
         width: 40px;
         height: 40px;
     }
 
-    .productListItem .back {
+    .list-grid .back {
         
         top: -260px;
     }
-    .productListItem .cover button {
+    .list-grid .overlay button {
         width: 180px;
     }
 }
