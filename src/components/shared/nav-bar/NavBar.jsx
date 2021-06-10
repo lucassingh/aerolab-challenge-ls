@@ -4,7 +4,7 @@ import './Widget.scss';
 import { GlobalContext } from '../../../context/GlobalContext';
 import Modal from '../../shared/modal/Modal';
 import ItemHistory from '../../item-history/ItemHistory';
-import GetCoin from '../../get-coins/GetCoins';
+import GetCoin from '../../get-coins/getCoins';
 import coin  from '../../../assets/images/coin.svg';
 import FilterData from '../../filter-data/FilterData';
 
