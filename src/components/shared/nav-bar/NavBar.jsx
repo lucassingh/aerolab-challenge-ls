@@ -38,11 +38,11 @@ const WidgetAsideBar = () => {
 					
 				</>
 			)}
-			{/* {history && (
+			{history && (
 				<>
 					<ItemHistory history={history} />
 				</>
-			)} */}
+			)}
 
 			{showBuyModal && (
 				<Modal
